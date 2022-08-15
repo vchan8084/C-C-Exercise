@@ -10,6 +10,8 @@ In .env file, set up the variables:
 
 (For more information on Active Record Encryption, please refer to this [guide](https://guides.rubyonrails.org/active_record_encryption.html))
 
+Use `rake db: seed` for some dummy data.
+
 Use `rails s` to start app
 
 ## To Do:

@@ -4,8 +4,8 @@ class Api::V1::BillingAddressesController < ApplicationController
   before_action :set_billing_address, only: %i[ show ]
 
   def index
-    @billing_addresses = BillingAddress.all
-    render json: @billing_addresses
+    billing_addresses = BillingAddress.all
+    render json: billing_addresses
   end
 
   def show
