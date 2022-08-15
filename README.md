@@ -10,11 +10,19 @@ In .env file, set up the variables:
 
 (For more information on Active Record Encryption, please refer to this [guide](https://guides.rubyonrails.org/active_record_encryption.html))
 
+Also add this variable:
+`ENV_URL=http://localhost:3000`
+
 Use `rake db: seed` for some dummy data.
 
 Use `rails s` to start app.
 
 `http://localhost:3000/`
+
+## Heroku
+This app is hosted on heroku.
+
+`https://cc-exercise-vanessa.herokuapp.com/`
 
 ## To Do:
 1. more validations (i.e - setting :message option for error message, string validation)
