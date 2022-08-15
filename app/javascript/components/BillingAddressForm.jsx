@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const formValues = {
   name: '',
@@ -8,7 +8,7 @@ const formValues = {
   city: '',
   state: '',
   zip: ''
-}
+};
 
 const BillingAddressForm = () => {
   const [billingAddressValues, setBillingAddressValues] = useState(formValues);
@@ -34,7 +34,7 @@ const BillingAddressForm = () => {
       city: billingAddressValues.city,
       state: billingAddressValues.state,
       zip: billingAddressValues.zip
-    }}
+    }};
 
     try {
       let res = await fetch("http://localhost:3000/api/v1/billing_addresses/create", {

@@ -12,9 +12,13 @@ In .env file, set up the variables:
 
 Use `rake db: seed` for some dummy data.
 
-Use `rails s` to start app
+Use `rails s` to start app.
+
+`http://localhost:3000/`
 
 ## To Do:
-1. styling
-2. more validations and testing
-3. set up linter
+1. more validations (i.e - setting :message option for error message, string validation)
+2. more tests
+3. set up linter and prettier
+4. styling
+5. display more helpful error messaging on frontend

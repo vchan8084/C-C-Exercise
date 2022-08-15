@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Switch,
+  BrowserRouter as Router,
   Route,
   Routes,
   Link
@@ -8,8 +8,9 @@ import {
 import BillingAddressForm from "./BillingAddressForm";
 import BillingAddresses from "./BillingAddresses";
 
-export default function App() {
+const App = () => {
   return (
+    <Router>
       <div>
         <nav>
           <ul>
@@ -27,5 +28,8 @@ export default function App() {
           <Route path="/" element={<BillingAddresses />} />
         </Routes>
       </div>
+    </Router>
   );
 }
+
+export default App;
