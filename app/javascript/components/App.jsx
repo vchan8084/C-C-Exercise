@@ -125,6 +125,7 @@ const App = () => {
             onChange={(e) => updateBillingAddressValue(e.target.name, e.target.value)
           }/>
         </label>
+        <br />
         <button type="submit">Submit</button>
         {message ? (
           <p>{message}</p>

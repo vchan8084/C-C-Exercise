@@ -3,7 +3,6 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'billing_addresses/index'
       post 'billing_addresses/create'
-      delete 'billing_addresses/:id', to: 'billing_addresses#destroy'
     end
   end
 
