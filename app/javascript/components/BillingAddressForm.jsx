@@ -37,7 +37,7 @@ const BillingAddressForm = () => {
     }};
 
     try {
-      let res = await fetch("http://localhost:3000/api/v1/billing_addresses/create", {
+      let res = await fetch(`${process.env.ENV_URL}/api/v1/billing_addresses/create`, {
         method: "POST",
         headers: {
           Accept: 'application/json',

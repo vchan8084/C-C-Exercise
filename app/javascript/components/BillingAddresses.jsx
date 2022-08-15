@@ -5,7 +5,7 @@ const BillingAddresses = () => {
 
   const getAddresses = async () => {
     try {
-      let res = await fetch("http://localhost:3000/api/v1/billing_addresses/index", {
+      let res = await fetch(`${process.env.ENV_URL}/api/v1/billing_addresses/index`, {
         method: "GET",
         headers: {
           Accept: 'application/json',
